@@ -14,7 +14,7 @@ class Zabbix
     @logger.level = Logger::INFO
     @mutex = Mutex.new
     @api = ZabbixApi.connect(
-      :url => 'http://zabbix.conbu.net/api_jsonrpc.php',
+      :url => 'http://10.100.0.5/zabbix/api_jsonrpc.php',
       :user => user,
       :password => password
     )
